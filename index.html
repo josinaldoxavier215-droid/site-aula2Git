@@ -6,6 +6,143 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>O Melhor para seu companheiro</h1>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PataFeliz Pet Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="logo-pata">🐾</span> PataFeliz</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#categorias">Produtos</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#depoimentos">Avaliações</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#agendar" class="btn-nav">Agendar</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-tag">✨ Cuidado com amor</span>
+    <h1>O melhor para o seu <em>companheiro</em> de vida</h1>
+    <p>Produtos premium, banho e tosa, consultas veterinárias e muito mais.</p>
+    <div class="hero-btns">
+      <a href="#produtos" class="btn-primary">Ver produtos</a>
+      <a href="#agendar" class="btn-secondary">Agendar serviço</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card">
+      <span class="hero-emoji">🐶</span>
+      <h3>Banho & Tosa Premium</h3>
+      <p>Profissionais especializados com produtos naturais</p>
+      <span class="badge-float top">⭐ 4.9 avaliação</span>
+      <span class="badge-float bottom">🕐 Agende online</span>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div><span class="stat-num">12k+</span><span class="stat-label">Pets felizes</span></div>
+    <div><span class="stat-num">8 anos</span><span class="stat-label">De experiência</span></div>
+    <div><span class="stat-num">500+</span><span class="stat-label">Produtos</span></div>
+    <div><span class="stat-num">98%</span><span class="stat-label">Satisfação</span></div>
+  </div>
+</div>
+
+<!-- CATEGORIAS -->
+<section class="categorias" id="categorias">
+  <div class="section-title">
+    <h2>O que você procura?</h2>
+    <p>Encontre tudo para cães, gatos, pássaros e muito mais</p>
+  </div>
+  <div class="cat-grid">
+    <a class="cat-card" href="#"><span class="cat-icon">🐕</span><h3>Cães</h3></a>
+    <a class="cat-card" href="#"><span class="cat-icon">🐈</span><h3>Gatos</h3></a>
+    <a class="cat-card" href="#"><span class="cat-icon">🐦</span><h3>Aves</h3></a>
+    <a class="cat-card" href="#"><span class="cat-icon">🐠</span><h3>Peixes</h3></a>
+    <a class="cat-card" href="#"><span class="cat-icon">🐹</span><h3>Roedores</h3></a>
+    <a class="cat-card" href="#"><span class="cat-icon">🦎</span><h3>Répteis</h3></a>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="produtos" id="produtos">
+  <div class="produtos-inner">
+    <div class="section-title">
+      <h2>Mais vendidos</h2>
+      <p>Produtos selecionados com qualidade e carinho</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">🦴<span class="prod-badge">Oferta</span></div>
+        <div class="prod-info">
+          <p class="prod-tag">Cães</p>
+          <h3>Ração Premium Adulto</h3>
+          <p>Fórmula equilibrada com proteínas naturais para cães adultos.</p>
+          <div class="prod-footer">
+            <span class="prod-preco">R$89,90</span>
+            <button class="btn-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repita o bloco .prod-card para os outros produtos -->
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
+  <div class="section-title">
+    <h2>Nossos serviços</h2>
+  </div>
+  <div class="serv-grid">
+    <div class="serv-card">
+      <div class="serv-icon">✂️</div>
+      <h3>Banho & Tosa</h3>
+      <p>Profissionais experientes com produtos naturais e hipoalergênicos.</p>
+    </div>
+    <!-- Repita para: Veterinária, Hotel Pet, Dog Walker -->
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">🐾 PataFeliz</a>
+      <p>Cuidado, amor e qualidade para o seu melhor amigo.</p>
+    </div>
+
+</div>
+  <div class="footer-bottom">
+    <span>© 2026 PataFeliz. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('nav-links').classList.remove('open');
+    });
+  });
+</script>
+
 </body>
 </html>
