@@ -1,4 +1,4 @@
-console.log("Funcionando ✅");
+console.log("Funcionando");
 
 document.addEventListener("DOMContentLoaded", () => {
 
